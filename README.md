@@ -82,25 +82,18 @@ graph TD
     Report --> __end__["End"]
 ```
 
-**Legend**
-
-* Yellow rectangles = agents
-* Green ellipses = tools
-* Solid arrows = agent hand-offs
-* Dotted arrows = tool invocations
-
 ---
 
 ## Directory Layout
 
 ```
-financial_agents/   # Agent builders and configurations
-prompts/            # Prompt templates for each agent type
-tools/              # Function tools & MCP servers (Yahoo Finance, FRED, etc.)
-outputs/            # Generated data files and reports (ignored by git)
-main.py             # CLI entry point
-streamlit_app.py    # Streamlit UI
-research_workflow.py# Shared asyncio workflow helper
+financial_agents/    # Agent builders and configurations
+prompts/             # Prompt templates for each agent type
+tools/               # Function tools & MCP servers (Yahoo Finance, FRED, etc.)
+outputs/             # Generated data files and reports (ignored by git)
+main.py              # CLI entry point
+streamlit_app.py     # Streamlit UI
+research_workflow.py # Shared asyncio workflow helper
 settings.py          # Centralised defaults for models, timeouts, etc.
 ```
 
