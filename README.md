@@ -20,12 +20,22 @@ This repository contains a multi-agent workflow that answers investment research
    ```
 
 2. **Set environment variables** (required):
-
+   **Unix**
    ```bash
    export OPENAI_API_KEY="<your-openai-key>"
    export FRED_API_KEY="<your-fred-key>"  # Required for Macro agent
    ```
-
+   **Windows Powershell temporarely, works during powershell session**
+   ```bash
+   $env:OPENAI_API_KEY = "<your-openai-key>"
+   $env:FRED_API_KEY = "<your-fred-key>"
+   ```
+    **Windows Powershell permanent**
+   ```bash
+   setx OPENAI_API_KEY "<your-openai-key>"
+   setx FRED_API_KEY "<your-fred-key>"
+   ```
+   
 3. **Run from the command line**:
 
    ```bash
